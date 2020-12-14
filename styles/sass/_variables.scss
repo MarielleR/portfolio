@@ -1,0 +1,25 @@
+// Dark Mode Color Pallette
+$primaryBackgroundColorDarkMode: #495057;
+$primaryFontColorDarkMode: #f8f9fa;
+$accentColorOneDarkMode: #ef233c;
+$accentColorTwoDarkMode: #ffd166;
+
+
+//Light Mode Color Pallette
+$primaryBackgroundColorLightMode: #f8f9fa;
+$primaryFontColorLightMode: #495097;
+$accentColorOneLightMode: #dbcdf0;
+// or #E0AAff (vibrant purple)
+$accentColorTwoLightMode: #c6def1;
+
+//Fonts
+$rale: 'Raleway', sans-serif;
+
+//Mixin for Font Specifications
+@mixin fontSpecs($font, $size, $weight, $color) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+};
+
