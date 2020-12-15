@@ -467,3 +467,68 @@ input:checked + .toggle-light .switch {
           justify-content: center;
   margin-top: 90px;
 }
+
+#about {
+  height: 90vh;
+}
+
+.about-me-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.about-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-details-container .about-text p {
+  margin-bottom: 25px;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.about-details-container .about-img img {
+  border-radius: 30px;
+  width: 75%;
+  margin-left: 140px;
+}
+
+.about-details-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-details-container ul li {
+  margin-right: 30px;
+}
+
+.skills-title {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.skills-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.skills-grid li {
+  margin-bottom: 55px;
+}
+
+.skills-grid i {
+  padding-bottom: 8px;
+}
