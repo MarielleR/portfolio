@@ -74,7 +74,7 @@ nav {
         opacity: 0;
     }
 
-input:checked + .toggle-light .switch {
+header input:checked + .toggle-light .switch {
     transform: translateY(55px);
     }
 

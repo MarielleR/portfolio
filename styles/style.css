@@ -453,7 +453,7 @@ nav .nav-flex {
   opacity: 0;
 }
 
-input:checked + .toggle-light .switch {
+header input:checked + .toggle-light .switch {
   -webkit-transform: translateY(55px);
           transform: translateY(55px);
 }
@@ -531,4 +531,46 @@ input:checked + .toggle-light .switch {
 
 .skills-grid i {
   padding-bottom: 8px;
+}
+
+.projects-title {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-title h2 {
+  margin-bottom: 15px;
+  font-size: 5rem;
+}
+
+.projects-title p {
+  margin-bottom: 115px;
+  font-size: 2rem;
+}
+
+.info-below {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.read-one {
+  opacity: 0;
 }
