@@ -37,3 +37,8 @@ button {
 .fa-lightbulb {
     @include fontSpecs (2.3rem, 700);
 }
+
+//Footer 
+.about-social-footer li {
+    @include fontSpecs (3.5em, 700);
+}

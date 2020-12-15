@@ -1,0 +1,15 @@
+.about-social-footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        a {
+            margin: 25px 0;
+        }
+}

@@ -13,17 +13,35 @@
             }
 }
 
+.project-one-img img,
+.project-two-img img,
+.project-three-img img {
+    border: 3px solid $universalAccent;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.project-one-text,
+.project-two-text,
+.project-three-text {
+    margin: 0 30px 60px 30px;
+}
+
+
 .info-below {
     margin: 15px 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hidden {
     display: none;
 }
 
-.read-one {
+.read-one,
+.read-two,
+.read-three {
     opacity: 0;
 }
 

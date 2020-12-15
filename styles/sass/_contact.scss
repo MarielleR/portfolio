@@ -1,0 +1,41 @@
+.contact-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.contact-container {
+    display: flex;
+    .form-text {
+        width: 50%;
+        margin-right: 20px;
+    }
+        .form-text p {
+            margin-bottom: 22px;
+        }
+        .form-box {
+            width: 50%;
+        }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+}
+
+form input {
+    margin-bottom: 8px;
+    padding: 5px 0;
+}
+
+.submit {
+    margin-top: 10px;
+    width: 125px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+

@@ -349,6 +349,11 @@ button {
   font-weight: 700;
 }
 
+.about-social-footer li {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+
 header {
   height: 100vh;
 }
@@ -557,20 +562,129 @@ header input:checked + .toggle-light .switch {
   font-size: 2rem;
 }
 
+.project-one-img img,
+.project-two-img img,
+.project-three-img img {
+  border: 3px solid grey;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.project-one-text,
+.project-two-text,
+.project-three-text {
+  margin: 0 30px 60px 30px;
+}
+
 .info-below {
   margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hidden {
   display: none;
 }
 
-.read-one {
+.read-one,
+.read-two,
+.read-three {
   opacity: 0;
+}
+
+.contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container .form-text {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.contact-container .form-text p {
+  margin-bottom: 22px;
+}
+
+.contact-container .form-box {
+  width: 50%;
+}
+
+.contact-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  margin-bottom: 8px;
+  padding: 5px 0;
+}
+
+.submit {
+  margin-top: 10px;
+  width: 125px;
+  padding: 10px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+.credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credits a {
+  margin: 25px 0;
 }

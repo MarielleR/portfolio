@@ -12,6 +12,16 @@ $(document).ready(function () {
         console.log('click on read one')
     });
 
+    $("#read-two").on("click", function () {
+        $("#project-two-text").toggleClass("hidden");
+        console.log('click on read two')
+    });
+
+    $("#read-three").on("click", function () {
+        $("#project-three-text").toggleClass("hidden");
+        console.log('click on read three')
+    });
+
 });
 
 
