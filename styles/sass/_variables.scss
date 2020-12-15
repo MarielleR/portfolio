@@ -1,25 +1,29 @@
+//Accent/Hover Colors
+$universalAccent: rgb(65, 59, 59);
+
 // Dark Mode Color Pallette
-$primaryBackgroundColorDarkMode: #495057;
+$primaryBackgroundColorDarkMode: black;
 $primaryFontColorDarkMode: #f8f9fa;
-$accentColorOneDarkMode: #ef233c;
-$accentColorTwoDarkMode: #ffd166;
+$accentColorOneDarkMode: #dd0000;
+// $accentColorOneDarkMode: #dbcdf0;
+// $accentColorTwoDarkMode: #E0AAff;
+
 
 
 //Light Mode Color Pallette
 $primaryBackgroundColorLightMode: #f8f9fa;
-$primaryFontColorLightMode: #495097;
-$accentColorOneLightMode: #dbcdf0;
-// or #E0AAff (vibrant purple)
-$accentColorTwoLightMode: #c6def1;
+$secondaryFontColorLightMode: black;
+$accentColorOneLightMode: #4f0c7c;
+// // or #E0AAff (vibrant purple)
+// $accentColorTwoLightMode: #c6def1;
+
 
 //Fonts
 $rale: 'Raleway', sans-serif;
 
 //Mixin for Font Specifications
-@mixin fontSpecs($font, $size, $weight, $color) {
-    font-family: $font;
+@mixin fontSpecs( $size, $weight) {
     font-size: $size;
     font-weight: $weight;
-    color: $color;
 };
 

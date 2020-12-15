@@ -274,6 +274,41 @@ li {
   margin: 0 auto;
 }
 
+body {
+  background-color: black;
+  color: #f8f9fa;
+}
+
+body a {
+  color: #dd0000;
+}
+
+body a:hover {
+  -webkit-text-decoration: 3px underline #413b3b;
+          text-decoration: 3px underline #413b3b;
+  color: #413b3b;
+}
+
+.light-mode-test {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.light-mode-test a {
+  color: #4f0c7c;
+}
+
+.light-mode-test a:hover {
+  color: #413b3b;
+  -webkit-text-decoration: 3px underline #413b3b;
+          text-decoration: 3px underline #413b3b;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 h1 {
-  color: red;
+  font-size: 5rem;
+  font-weight: 700;
 }

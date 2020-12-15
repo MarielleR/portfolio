@@ -1,0 +1,7 @@
+body {
+    font-family: $rale;
+}
+
+h1 {
+    @include fontSpecs (5rem, 700);
+}
