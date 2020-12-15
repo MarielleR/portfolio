@@ -18,7 +18,7 @@
     <header>
         <div class="wrapper">
             <nav>
-                <ul>
+                <ul class="nav-flex">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -30,24 +30,30 @@
 
         <!-- Add a hamburger menu here later -->
         <section id="home">
-            <div class="wrapper">
+            <div class="wrapper header-flex">
+                <div class="switch-light">
+                    <input type="checkbox" class="light-check" id="light-dark" tabindex="0">                    
+                    <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
+                        <span aria-hidden="true" class="far fa-lightbulb"></span>
+                        <span aria-hidden="true" class="fas fa-moon"></span>
+                        <span class="sr-only">Switch to dark mode</span>
+                    
+                        <span class="sr-only">Switch to light mode</span>
+
+                        <div class="switch"></div>
+                    </label>
+                </div>
                 <div class="who">
                     <h1 class="title-name">MARIELLE ROBERTS<span class="period">.</span></h1>
                     <H2>FRONT-END</H2>
                     <H2>WEB DEVELOPER</H2>
                 </div>
 
-                <div class="switch-light">
-                    <input type="checkbox" class="light-check" id="light-dark" tabindex="0">                    
-                    <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
-                        <span aria-hidden="true" class="far fa-moon"></span>
-                        <span class="sr-only">Switch to dark mode</span>
-                    
-                        <span aria-hidden="true" class="far fa-lightbulb"></span>
-                        <span class="sr-only">Switch to light mode</span>
-                    </label>
-                </div>
             </div>
+            <div class="down-chevron">
+                <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            
         </section>
     </header>
 
@@ -143,7 +149,7 @@
                 <div class="projects-container">
                     <div class="project-one">
                         <div class="project-one-img">
-                            <img src="" alt="">
+                            <img src="./assets/Screen Shot 2020-12-15 at 10.19.06 AM.png" alt="photo of the book clubs reads homepage">
                         </div>
                         <div class="project-one-text">
                             <h3>Book Club Reads</h3>
@@ -152,7 +158,7 @@
                     </div>
                     <div class="project-two">
                         <div class="project-two-img">
-                            <img src="" alt="">
+                            <img src="./assets/Screen Shot 2020-12-15 at 10.21.33 AM.png" alt="photo of resto recco homepage">
                         </div>
                         <div class="project-two-text">
                             <h3>Resto Recco PRO</h3>
@@ -161,7 +167,7 @@
                     </div>
                     <div class="project-three">
                         <div class="project-three-img">
-                            <img src="" alt="">
+                            <img src="./assets/Screen Shot 2020-12-15 at 10.22.48 AM.png" alt="photo of the tech insider homepage">
                         </div>
                         <div class="project-three-text">
                             <h3>The Tech Insider</h3>

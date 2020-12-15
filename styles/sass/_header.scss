@@ -1,0 +1,90 @@
+//Nav Styles
+header {
+    height: 100vh;;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    height: 15vh;
+    .nav-flex {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+}
+
+.who {
+    margin-top: 170px;
+    .title-name {
+        display: flex;
+        justify-content: center;
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+.switch-light {
+    margin-top: 250px;
+}
+
+.toggle-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-light,
+.light-check,
+.switch {
+    position: absolute;
+    background-color:darkslategray;
+    padding: 30px 10px;
+    border-radius: 20px;
+}
+
+.toggle-light {
+    cursor: pointer;
+}
+
+.fa-moon {
+    color: #E0AAff;
+    // margin-bottom: 45px;
+}
+
+.fa-lightbulb {
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.switch {
+    background-color: $primaryFontColorDarkMode;
+    height: 20px;
+    padding: 17px 17px;
+    transition: transform 0.2s linear;
+}
+
+ .light-check {
+        opacity: 0;
+    }
+
+input:checked + .toggle-light .switch {
+    transform: translateY(55px);
+    }
+
+
+.down-chevron {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+
+

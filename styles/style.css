@@ -284,9 +284,9 @@ body a {
 }
 
 body a:hover {
-  -webkit-text-decoration: 3px underline #413b3b;
-          text-decoration: 3px underline #413b3b;
-  color: #413b3b;
+  -webkit-text-decoration: 3px underline grey;
+          text-decoration: 3px underline grey;
+  color: grey;
 }
 
 .light-mode-test {
@@ -299,9 +299,9 @@ body a:hover {
 }
 
 .light-mode-test a:hover {
-  color: #413b3b;
-  -webkit-text-decoration: 3px underline #413b3b;
-          text-decoration: 3px underline #413b3b;
+  color: grey;
+  -webkit-text-decoration: 3px underline grey;
+          text-decoration: 3px underline grey;
 }
 
 body {
@@ -309,6 +309,161 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 5.2rem;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+li {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+button {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.nav-flex li {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.fa-chevron-down {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.fa-moon,
+.fa-lightbulb {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+header {
+  height: 100vh;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  height: 15vh;
+}
+
+nav .nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.who {
+  margin-top: 170px;
+}
+
+.who .title-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.who h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.switch-light {
+  margin-top: 250px;
+}
+
+.toggle-light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch-light,
+.light-check,
+.switch {
+  position: absolute;
+  background-color: darkslategray;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+
+.toggle-light {
+  cursor: pointer;
+}
+
+.fa-moon {
+  color: #E0AAff;
+}
+
+.fa-lightbulb {
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+.switch {
+  background-color: #f8f9fa;
+  height: 20px;
+  padding: 17px 17px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.light-check {
+  opacity: 0;
+}
+
+input:checked + .toggle-light .switch {
+  -webkit-transform: translateY(55px);
+          transform: translateY(55px);
+}
+
+.down-chevron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 90px;
 }
