@@ -45,6 +45,35 @@
     opacity: 0;
 }
 
+//Media Queries
+@media (max-width: 608px) {
+    .projects-title p {
+        font-size: 1.6rem;
+    }
+
+    .project-one-text p,
+    .project-two-text p,
+    .project-three-text p {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 493px) {
+    .projects-title p {
+        font-size: 1.2rem;
+    }
+
+    .project-one-text p,
+    .project-two-text p,
+    .project-three-text p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
 
 
 

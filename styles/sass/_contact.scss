@@ -7,6 +7,7 @@
 
 .contact-container {
     display: flex;
+    text-align: center;
     .form-text {
         width: 50%;
         margin-right: 20px;
@@ -45,3 +46,18 @@ form textarea {
     margin-bottom: 70px;
 }
 
+//Media Queries
+@media (max-width: 638px) {
+    .contact-container {
+        flex-direction: column;
+            .form-text {
+                width: 100%;
+                    p {
+                        font-size: 2rem;
+                    }
+            }
+                .form-box {
+                    width: 100%;
+                }
+    }
+}

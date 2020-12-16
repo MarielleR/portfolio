@@ -1,7 +1,3 @@
-.about-me-section {
-    height: 100vh;
-}
-
 .about-me-title h2 {
     display: flex;
     justify-content: center;
@@ -23,7 +19,6 @@
         }
             ul {
                 display: flex;
-                // justify-content: center;
                 li {
                     margin-right: 30px;
                 }
@@ -31,4 +26,31 @@
 
 }
 
+div.chevron-about {
+    margin-bottom: 100px;
+}
+
 //Media queries 
+@media (max-width: 1018px) {
+    .about-details-container {
+        flex-direction: column-reverse;
+            .about-img img {
+                display: flex;
+                justify-content: center;
+                margin-left: 0px;
+                width: 100%;
+            }
+                ul {
+                    justify-content: center;
+                }
+    }
+}
+
+@media (max-width: 579px) {
+    .about-text {
+        margin-top: 25px;
+            p {
+                font-size: 1.8rem;
+            }
+    }
+}
