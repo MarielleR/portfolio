@@ -425,6 +425,10 @@ nav .nav-flex {
   display: none;
 }
 
+.mobile-menu a {
+  font-size: 2rem;
+}
+
 .who {
   margin-top: 170px;
 }
@@ -448,11 +452,16 @@ nav .nav-flex {
   margin-bottom: 20px;
 }
 
-.switch-light {
+.switch-parent {
   margin-top: 250px;
 }
 
-.toggle-light {
+.switch-parent .light-input {
+  opacity: 0;
+}
+
+.switch-parent .toggle-label {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,17 +474,13 @@ nav .nav-flex {
           align-items: center;
 }
 
-.switch-light,
-.light-check,
+.switch-parent,
+.light-input,
 .switch {
   position: absolute;
   background-color: darkslategray;
   padding: 30px 10px;
   border-radius: 20px;
-}
-
-.toggle-light {
-  cursor: pointer;
 }
 
 .fa-moon {
@@ -497,11 +502,7 @@ nav .nav-flex {
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
-.light-check {
-  opacity: 0;
-}
-
-header input:checked + .toggle-light .switch {
+header input:checked + .toggle-label .switch {
   -webkit-transform: translateY(53px);
           transform: translateY(53px);
 }
@@ -522,7 +523,58 @@ header input:checked + .toggle-light .switch {
   }
   .mobile-menu {
     display: block;
+    z-index: 2;
   }
+  .mobile-menu .fa-bars {
+    margin-top: 5px;
+    margin-left: 9px;
+  }
+  .mobile-menu #hamb-ul-id {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    -webkit-transition: -webkit-transform 1s linear;
+    transition: -webkit-transform 1s linear;
+    transition: transform 1s linear;
+    transition: transform 1s linear, -webkit-transform 1s linear;
+    -webkit-transform: translateX(58px);
+            transform: translateX(58px);
+  }
+  .switch-parent {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .title-name {
+    font-size: 4rem;
+  }
+  .who h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 489px) {
+  .switch-parent {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+  .fa-bars {
+    font-size: 5rem;
+  }
+  .title-name {
+    font-size: 2.6rem;
+  }
+  .who h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.about-me-section {
+  height: 100vh;
 }
 
 .about-me-title h2 {

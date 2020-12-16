@@ -1,8 +1,9 @@
 
 $(document).ready(function () {
+    console.log("hereee");
 
     // Switch to Light Mode
-    $("header input:checked").on("click", function () {
+    $("header .switch").on("click", function () {
         $("body").toggleClass("light-mode-test");
         console.log('clickedddd')
     });
