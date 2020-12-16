@@ -9,10 +9,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- AOS Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5a7eceb3e6.js" crossorigin="anonymous"></script>
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
@@ -57,10 +57,20 @@
                     </div>
                     <div class="who">
                         <h1 class="title-name">MARIELLE ROBERTS<span class="period">.</span></h1>
-                        <H2>FRONT-END</H2>
-                        <H2>WEB DEVELOPER</H2>
+                        <H2 class="animate__animated animate__fadeInLeft">FRONT-END</H2>
+                        <H2 class="animate__animated animate__fadeInRight">WEB DEVELOPER</H2>
                     </div>
 
+                </div>
+                <!-- Flame animation is courtesy of: https://codepen.io/z00f9eb5633/pen/JXVpgp -->
+                <div class="fire">
+                    <div class="flames">
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                        <div class="flame"></div>
+                    </div>
+                    <div class="logs"></div>
                 </div>
                 <div class="down-chevron">
                     <a href="#about"><i class="fas fa-chevron-down"></i></a>
@@ -77,7 +87,7 @@
                 </div>
 
                 <div class="about-details-container">
-                    <div class="about-text">
+                    <div class="about-text animate__animated animate__fadeInLeft">
                         <p>Want to know a little bit about the human who built this site? I'm Marielle Roberts, a innovating and solution-driven developer. With 10 years of business development experience under my belt, my unique career path led me to coding - which I fell head over heels for!</p>
 
                         <p>When I'm not building accessible, functional and user-friendly applications, I love spending time with my husband and son. In the "before times" (pre-pandemic, of course), I also like hanging out with friends on a patio, receiving packages from Amazon and drinking HOT coffee.</p>
@@ -85,14 +95,14 @@
                         <p>I can't tell you how excited I am to have made the jump to world of development and to continue hone my skills. Feel free to connect with on the interwebs - check out me out:</p>
             
                         <ul class="about-social" >
-                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's github" href="https://github.com/MarielleR"><i class="fab fa-github-square"></i></a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's linkedIn" href="https://www.linkedin.com/in/marielleindar/"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's medium" href="https://marielle-roberts.medium.com/"><i class="fab fa-medium"></i></a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's twitter"
+                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's Github" href="https://github.com/MarielleR"><i class="fab fa-github-square"></i></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's LinkedIn" href="https://www.linkedin.com/in/marielleindar/"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" title="View a blog post on Medium!" href="https://marielle-roberts.medium.com/"><i class="fab fa-medium"></i></a></li>
+                            <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's Twitter!"
                             href="https://twitter.com/m_robertz"><i class="fab fa-twitter-square"></i></a></li>
                         </ul>
                     </div>
-                    <div class="about-img">
+                    <div class="about-img animate__animated animate__fadeInRight">
                         <img src="./assets/IMG_0216.JPG" alt="headshot of Marielle Roberts">
                     </div>
                 </div>
@@ -103,7 +113,7 @@
         </section>
 
         <!-- SKILLS -->
-        <section id="skills" class="skills">
+        <section id="skills" class="skills animate__animated animate__pulse">
             <div class="wrapper">
                 <h2 class="skills-title section-title">SKILLS<span class="period">.</span></h2>
                 <ul class="skills-grid">
@@ -162,11 +172,11 @@
             </div>
         </section>
 
-        <section id="#projects">
+        <section id="projects">
             <div class="wrapper">
                 <div class="projects-title">
                     <h2 class="section-title">PROJECTS<span class="period">.</span></h2>
-                    <p>Visit this section again, as my portfolio continues to grow.</p>
+                    <p>View my growing list of projects, below!</p>
                 </div>
                 <div class="projects-container">
                     <div class="project-one">
@@ -174,9 +184,9 @@
                             <img src="./assets/Screen Shot 2020-12-15 at 10.19.06 AM.png" alt="photo of the book clubs reads homepage">
                         </div>
                         <div class="info-below">
-                            <a href="">LIVE SITE</a>
+                            <a href="https://brittany-marielle-martin-jon-project-6.github.io/book-club-reads/" target="_blank" rel="noopener noreferrer">LIVE SITE</a>
                             <input type="checkbox" id="read-one" class="read-one" title="read more about this project">
-                            <label for="read-one" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-one" title="read more about this project" class="read-class skills animate__animated animate__pulse">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         
                         <div class="project-one-text hidden" id="project-one-text">
@@ -188,9 +198,9 @@
                             <img src="./assets/Screen Shot 2020-12-15 at 10.21.33 AM.png" alt="photo of resto recco homepage">
                         </div>
                         <div class="info-below">
-                            <a href="">LIVE SITE</a>
+                            <a href="https://resto-recco-pro.netlify.app/" target="_blank" rel="noopener noreferrer">LIVE SITE</a>
                             <input type="checkbox" id="read-two" class="read-two" title="read more about this project">
-                            <label for="read-two" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-two" title="read more about this project" class="read-class skills animate__animated animate__pulse">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         <div class="project-two-text hidden" id="project-two-text">
                             <p>Feeling hungry? This fun app lets the user specify their location and type of cuisine they're craving, then provides them with a list of restaurants that fits their search parameters. Resto Recco PRO is powered by the Zomato API was built with Jquery and created via pair programming with Quayne Brown.</p>
@@ -201,9 +211,9 @@
                             <img src="./assets/Screen Shot 2020-12-15 at 10.22.48 AM.png" alt="photo of the tech insider homepage">
                         </div>
                         <div class="info-below">
-                            <a href="">LIVE SITE</a>
+                            <a href="https://marieller.github.io/marielle-roberts-project-5/" target="_blank" rel="noopener noreferrer">LIVE SITE</a>
                             <input type="checkbox" id="read-three" class="read-three" title="read more about this project">
-                            <label for="read-three" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-three" title="read more about this project" class="read-class skills animate__animated animate__pulse">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         <div class="project-three-text hidden" id="project-three-text">
                             <p>Looking for the hottest news from the Tech Industry? Check out The Tech Insider. This app has a clean interface that allows the user to view the latest stories and also has a key word search function. Using the New York Times API, the user is provided with tiles containing the image, headline, time stamp, an abstract and a link to the full article.</p>
@@ -220,12 +230,12 @@
             <div class="wrapper">
                 <h2 class="contact-title section-title">CONTACT ME<span class="period">.</span></h2>
                 <div class="contact-container">
-                    <div class="form-text">
+                    <div class="form-text animate__animated animate__fadeInLeft">
                         <p>If you would like to have a conversation, let's do it! I'm available for a (zoom) coffee or conversation; feel free to send me a note.</p>
                         <p>Email me directly: marielle@theredmoon.ca</p>
                     </div>
 
-                    <div class="form-box">
+                    <div class="form-box animate__animated animate__fadeInRight">
                         <form action="">
                             <!-- Need to enable this form -->
                             <label class="sr-only" for="name"></label>
@@ -260,7 +270,7 @@
                 </ul>
                 <div class="credits">
                     <a href="#" class="section-title">TAKE IT FROM THE TOP<i class="fas fa-long-arrow-alt-up"></i></a>
-                    <p class="section-title">DESIGNED BY MARIELLE ROBERTS</p>
+                    <p class="section-title animate__animated animate__pulse animate__repeat-20">DESIGNED BY MARIELLE ROBERTS</p>
                 </div>
             </div>
         </div>

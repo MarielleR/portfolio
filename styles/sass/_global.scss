@@ -61,6 +61,9 @@ body {
             & a:hover {
                 text-decoration: 3px underline $universalAccent;
             }
+                .fa-bars {
+                    color: $accentColorOneLightMode;
+                }
                 .period {
                     color: $accentColorOneLightMode;
                 }
@@ -78,20 +81,42 @@ body {
 }
 
 //All Hover/Focus States
-.fa-chevron-down:hover,
-.fa-chevron-down:focus,
+
 .section-title:hover,
 .section-title:focus,
 .read-class:hover,
-.read-class:focus,
+.read-class:focus {
+    color: $universalAccent;
+    transform: scale(1.2);
+}
+
+.fa-chevron-down:hover,
+.fa-chevron-down:focus {
+    transform: scale(1.4);
+    color: $accentColorOneDarkMode;
+}
+
 .fa-bars:hover,
 .fa-bars:focus {
-    color: $universalAccent;
+    transform: scale(1.4);
+    color: $primaryFontColorDarkMode;
+}
+
+nav li:hover {
+    transform: scale(1.4);
+}
+
+.about-social li:hover,
+.about-social-footer li:hover {
+    transform: scale(1.4);
+    color: $primaryFontColorDarkMode;
 }
 
 .submit:hover,
 .submit:focus {
     background-color: $accentColorOneDarkMode;
+    box-shadow: 1px 1px $universalAccent, 2px 2px $universalAccent, 3px 3px $universalAccent;
+    transform: translateX(-3px);
 }
 
 
