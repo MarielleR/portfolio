@@ -23,10 +23,16 @@
             }
 }
 
-form input {
+
+
+form input,
+form textarea {
+    border: 2px solid $universalAccent;
+    border-radius: 10px;
     margin-bottom: 8px;
-    padding: 5px 0;
+    padding: 10px 10px;
 }
+
 
 .submit {
     margin-top: 10px;

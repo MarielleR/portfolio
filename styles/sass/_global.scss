@@ -1,3 +1,5 @@
+//Global Styles
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -45,7 +48,6 @@ body {
             color: $accentColorOneDarkMode;
         }
         & a:hover {
-            text-decoration: 3px underline $universalAccent;
             color: $universalAccent;
         }
 }
@@ -56,10 +58,40 @@ body {
         & a {
             color: $accentColorOneLightMode;
         }
-        & a:hover {
-            color: $universalAccent;
-            text-decoration: 3px underline $universalAccent;
-        }
+            & a:hover {
+                text-decoration: 3px underline $universalAccent;
+            }
+                .period {
+                    color: $accentColorOneLightMode;
+                }
+                    .submit:hover,
+                    .submit:focus {
+                        background-color: $accentColorOneLightMode;
+                        color: $primaryBackgroundColorLightMode;
+                    }
+
+}
+
+//Period Style for Dark Mode
+.period {
+    color: $accentColorOneDarkMode;
+}
+
+//All Hover/Focus States
+.fa-chevron-down:hover,
+.fa-chevron-down:focus,
+.section-title:hover,
+.section-title:focus,
+.read-class:hover,
+.read-class:focus,
+.fa-bars:hover,
+.fa-bars:focus {
+    color: $universalAccent;
+}
+
+.submit:hover,
+.submit:focus {
+    background-color: $accentColorOneDarkMode;
 }
 
 

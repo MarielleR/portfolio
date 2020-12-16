@@ -38,6 +38,16 @@ button {
     @include fontSpecs (2.3rem, 700);
 }
 
+.fa-bars {
+    @include fontSpecs (3rem, 700);
+}
+
+//Projects
+.info-below a,
+.info-below label {
+    @include fontSpecs (2rem, 700);
+}
+
 //Footer 
 .about-social-footer li {
     @include fontSpecs (3.5em, 700);

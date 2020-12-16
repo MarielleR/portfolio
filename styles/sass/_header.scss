@@ -17,6 +17,10 @@ nav {
     }
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .who {
     margin-top: 170px;
     .title-name {
@@ -26,7 +30,7 @@ nav {
     h2 {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
@@ -66,8 +70,8 @@ nav {
 .switch {
     background-color: $primaryFontColorDarkMode;
     height: 20px;
-    padding: 17px 17px;
-    transition: transform 0.2s linear;
+    padding: 19px 19px;
+    transition: transform 0.3s linear;
 }
 
  .light-check {
@@ -75,7 +79,7 @@ nav {
     }
 
 header input:checked + .toggle-light .switch {
-    transform: translateY(55px);
+    transform: translateY(53px);
     }
 
 
@@ -85,6 +89,18 @@ header input:checked + .toggle-light .switch {
     margin-top: 90px;
 }
 
+// Media Queries
+@media (max-width: 968px) {
+    //Hamburger Menu
+    nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+}
 
 
 

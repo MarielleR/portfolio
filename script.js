@@ -22,6 +22,11 @@ $(document).ready(function () {
         console.log('click on read three')
     });
 
+    $("#bars").on("click", function () {
+        $("#hamb-ul-id").toggleClass("hidden");
+        console.log('hamburger toggle')
+    });
+
 });
 
 

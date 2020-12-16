@@ -242,6 +242,7 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -284,8 +285,6 @@ body a {
 }
 
 body a:hover {
-  -webkit-text-decoration: 3px underline grey;
-          text-decoration: 3px underline grey;
   color: grey;
 }
 
@@ -299,9 +298,38 @@ body a:hover {
 }
 
 .light-mode-test a:hover {
-  color: grey;
   -webkit-text-decoration: 3px underline grey;
           text-decoration: 3px underline grey;
+}
+
+.light-mode-test .period {
+  color: #4f0c7c;
+}
+
+.light-mode-test .submit:hover,
+.light-mode-test .submit:focus {
+  background-color: #4f0c7c;
+  color: #f8f9fa;
+}
+
+.period {
+  color: #dd0000;
+}
+
+.fa-chevron-down:hover,
+.fa-chevron-down:focus,
+.section-title:hover,
+.section-title:focus,
+.read-class:hover,
+.read-class:focus,
+.fa-bars:hover,
+.fa-bars:focus {
+  color: grey;
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: #dd0000;
 }
 
 body {
@@ -349,6 +377,17 @@ button {
   font-weight: 700;
 }
 
+.fa-bars {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.info-below a,
+.info-below label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .about-social-footer li {
   font-size: 3.5em;
   font-weight: 700;
@@ -382,6 +421,10 @@ nav .nav-flex {
   padding-top: 50px;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .who {
   margin-top: 170px;
 }
@@ -402,7 +445,7 @@ nav .nav-flex {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .switch-light {
@@ -447,11 +490,11 @@ nav .nav-flex {
 .switch {
   background-color: #f8f9fa;
   height: 20px;
-  padding: 17px 17px;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  transition: -webkit-transform 0.2s linear;
-  transition: transform 0.2s linear;
-  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  padding: 19px 19px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 .light-check {
@@ -459,8 +502,8 @@ nav .nav-flex {
 }
 
 header input:checked + .toggle-light .switch {
-  -webkit-transform: translateY(55px);
-          transform: translateY(55px);
+  -webkit-transform: translateY(53px);
+          transform: translateY(53px);
 }
 
 .down-chevron {
@@ -473,8 +516,13 @@ header input:checked + .toggle-light .switch {
   margin-top: 90px;
 }
 
-#about {
-  height: 90vh;
+@media (max-width: 968px) {
+  nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
 
 .about-me-title h2 {
@@ -640,9 +688,12 @@ header input:checked + .toggle-light .switch {
           flex-direction: column;
 }
 
-form input {
+form input,
+form textarea {
+  border: 2px solid grey;
+  border-radius: 10px;
   margin-bottom: 8px;
-  padding: 5px 0;
+  padding: 10px 10px;
 }
 
 .submit {
@@ -687,4 +738,8 @@ form input {
 
 .credits a {
   margin: 25px 0;
+}
+
+.credits p {
+  margin-bottom: 10px;
 }

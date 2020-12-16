@@ -26,43 +26,55 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+        
+            <div class="mobile-menu">
+                <i class="fa fa-bars" id="bars"></i>
+
+                <ul class="hamb-ul hidden" id="hamb-ul-id">
+                    <li class="hamb-li"><a href="#home">Home</a></li>
+                    <li class="hamb-li"><a href="#about">About</a></li>
+                    <li class="hamb-li"><a href="#skills">Skills</a></li>
+                    <li class="hamb-li"><a href="#projects">Projects</a></li>
+                    <li class="hamb-li"><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
 
         <!-- Add a hamburger menu here later -->
-        <section id="home">
-            <div class="wrapper header-flex">
-                <div class="switch-light">
-                    <input type="checkbox" class="light-check" id="light-dark" tabindex="0">                    
-                    <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
-                        <span aria-hidden="true" class="far fa-lightbulb"></span>
-                        <span aria-hidden="true" class="fas fa-moon"></span>
-                        <span class="sr-only">Switch to dark mode</span>
-                    
-                        <span class="sr-only">Switch to light mode</span>
+            <section id="home">
+                <div class="wrapper header-flex">
+                    <div class="switch-light">
+                        <input type="checkbox" class="light-check" id="light-dark" tabindex="0">                    
+                        <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
+                            <span aria-hidden="true" class="far fa-lightbulb"></span>
+                            <span aria-hidden="true" class="fas fa-moon"></span>
+                            <span class="sr-only">Switch to dark mode</span>
+                        
+                            <span class="sr-only">Switch to light mode</span>
 
-                        <div class="switch"></div>
-                    </label>
-                </div>
-                <div class="who">
-                    <h1 class="title-name">MARIELLE ROBERTS<span class="period">.</span></h1>
-                    <H2>FRONT-END</H2>
-                    <H2>WEB DEVELOPER</H2>
-                </div>
+                            <div class="switch"></div>
+                        </label>
+                    </div>
+                    <div class="who">
+                        <h1 class="title-name">MARIELLE ROBERTS<span class="period">.</span></h1>
+                        <H2>FRONT-END</H2>
+                        <H2>WEB DEVELOPER</H2>
+                    </div>
 
-            </div>
-            <div class="down-chevron">
-                <a href="#about"><i class="fas fa-chevron-down"></i></a>
-            </div>
-            
-        </section>
+                </div>
+                <div class="down-chevron">
+                    <a href="#about"><i class="fas fa-chevron-down"></i></a>
+                </div>
+                
+            </section>
+        </div>
     </header>
-
     <main>
         <!-- ABOUT ME -->
-        <section id="#about">
+        <section>
             <div class="wrapper">
-                <div class="about-me-title">
-                    <h2>About Me.</h2>
+                <div class="about-me-title" id="about">
+                    <h2 class="section-title">About Me<span class="period">.</span></h2>
                 </div>
 
                 <div class="about-details-container">
@@ -73,7 +85,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit in suscipit cum minus porro ullam nam delectus vel laboriosam?</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit in suscipit cum minus porro ullam nam
                         delectus vel laboriosam?</p>
-                        <ul class="about-social">
+                        <ul class="about-social" >
                             <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's github" href="https://github.com/MarielleR"><i class="fab fa-github-square"></i></a></li>
                             <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's linkedIn" href="https://www.linkedin.com/in/marielleindar/"><i class="fab fa-linkedin"></i></a></li>
                             <li><a target="_blank" rel="noopener noreferrer" title="Go to Marielle Robert's medium" href="https://marielle-roberts.medium.com/"><i class="fab fa-medium"></i></a></li>
@@ -94,7 +106,7 @@
         <!-- SKILLS -->
         <section id="skills">
             <div class="wrapper">
-                <h2 class="skills-title">SKILLS.</h2>
+                <h2 class="skills-title section-title">SKILLS<span class="period">.</span></h2>
                 <ul class="skills-grid">
                     <li class="skills">
                         <i class="fab fa-html5"></i>
@@ -154,7 +166,7 @@
         <section id="#projects">
             <div class="wrapper">
                 <div class="projects-title">
-                    <h2>PROJECTS.</h2>
+                    <h2 class="section-title">PROJECTS<span class="period">.</span></h2>
                     <p>Visit this section again, as my portfolio continues to grow.</p>
                 </div>
                 <div class="projects-container">
@@ -165,7 +177,7 @@
                         <div class="info-below">
                             <a href="">LIVE SITE</a>
                             <input type="checkbox" id="read-one" class="read-one" title="read more about this project">
-                            <label for="read-one" title="read more about this project">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-one" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         
                         <div class="project-one-text hidden" id="project-one-text">
@@ -179,7 +191,7 @@
                         <div class="info-below">
                             <a href="">LIVE SITE</a>
                             <input type="checkbox" id="read-two" class="read-two" title="read more about this project">
-                            <label for="read-two" title="read more about this project">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-two" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         <div class="project-two-text hidden" id="project-two-text">
                             <p>Feeling hungry? This fun app lets the user specify their location and type of cuisine they're craving, then provides them with a list of restaurants that fits their search parameters. Resto Recco PRO is powered by the Zomato API was built with Jquery and created via pair programming with Quayne Brown.</p>
@@ -192,7 +204,7 @@
                         <div class="info-below">
                             <a href="">LIVE SITE</a>
                             <input type="checkbox" id="read-three" class="read-three" title="read more about this project">
-                            <label for="read-three" title="read more about this project">Read More<i class="fas fa-angle-down"></i></label>
+                            <label for="read-three" title="read more about this project" class="read-class">Read More<i class="fas fa-angle-down"></i></label>
                         </div>
                         <div class="project-three-text hidden" id="project-three-text">
                             <p>Looking for the hottest news from the Tech Industry? Check out The Tech Insider. This app has a clean interface that allows the user to view the latest stories and also has a key word search function. Using the New York Times API, the user is provided with tiles containing the image, headline, time stamp, an abstract and a link to the full article.</p>
@@ -205,9 +217,9 @@
             </div>
         </section>
 
-        <section id="#contact">
+        <section id="contact">
             <div class="wrapper">
-                <h2 class="contact-title">CONTACT ME.</h2>
+                <h2 class="contact-title section-title">CONTACT ME<span class="period">.</span></h2>
                 <div class="contact-container">
                     <div class="form-text">
                         <p>If you would like to have a conversation, let's do it! I'm available for a (zoom) coffee or conversation; feel free to send me a note.</p>
@@ -248,8 +260,8 @@
                             href="https://twitter.com/m_robertz"><i class="fab fa-twitter-square"></i></a></li>
                 </ul>
                 <div class="credits">
-                    <a href="#">TAKE IT FROM THE TOP<i class="fas fa-long-arrow-alt-up"></i></a>
-                    <p>DESIGNED BY MARIELLE ROBERTS</p>
+                    <a href="#" class="section-title">TAKE IT FROM THE TOP<i class="fas fa-long-arrow-alt-up"></i></a>
+                    <p class="section-title">DESIGNED BY MARIELLE ROBERTS</p>
                 </div>
             </div>
         </div>
