@@ -10,22 +10,25 @@ header {
 
 nav {
     height: 15vh;
-    background-color: rgba($color: black, $alpha: 0.5);
     z-index: 9999999;
+    
     .nav-flex {
         display: flex;
         justify-content: space-evenly;
         padding-top: 50px;
     }
-        li {
-            transition: all 0.4s ease-in-out;
-            z-index: 999;
+    li {
+        transition: all 0.4s ease-in-out;
+        z-index: 999;
+        background-color: rgba($color: black, $alpha: 0.5);
+        padding: 20px
         }
 }
 
 .mobile-menu {
     display: none;
     z-index: 999;
+    position: relative;
         a {
             font-size: 2rem;
         }
@@ -54,6 +57,12 @@ nav {
     transition: all 0.4s ease-in-out;
     z-index: 9999;
 }
+
+.top-chevron {
+    margin-top: 40px;
+}
+
+//CSS for ink animation, courtesy of: https://codepen.io/hexapode/pen/EapgoZ
 
     #container  {
     width : 100vw; 

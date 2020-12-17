@@ -48,38 +48,14 @@ li {
 body {
     background-color: $primaryBackgroundColorDarkMode;
     color: $primaryFontColorDarkMode;
-        a {
-            color: $accentColorOneDarkMode;
-        }
         & a:hover {
             color: $universalAccent;
         }
 }
 
-// .light-mode-test {
-//     background-color: $primaryBackgroundColorLightMode;
-//     color: $secondaryFontColorLightMode;
-//         & a {
-//             color: $accentColorOneLightMode;
-//         }
-//             & a:hover {
-//                 text-decoration: 3px underline $universalAccent;
-//             }
-//                 .fa-bars {
-//                     color: $accentColorOneLightMode;
-//                 }
-//                 .period {
-//                     color: $accentColorOneLightMode;
-//                 }
-//                     .submit:hover,
-//                     .submit:focus {
-//                         background-color: $accentColorOneLightMode;
-//                         color: $primaryBackgroundColorLightMode;
-//                     }
 
-// }
 
-//Period Style for Dark Mode
+//Period Style
 .period {
     color: $accentColorOneDarkMode;
 }
@@ -107,6 +83,11 @@ body {
 }
 
 nav li:hover {
+    transform: scale(1.4);
+}
+
+.skills-grid li:hover,
+.skills-grid li:focus {
     transform: scale(1.4);
 }
 

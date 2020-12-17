@@ -1,10 +1,5 @@
 
 $(document).ready(function () {
-    console.log("hereee");
-
-    // Switch to Light Mode
-
-
     $("#read-one").on("click", function () {
         $("#project-one-text").toggleClass("hidden");
         console.log('click on read one')
@@ -25,7 +20,7 @@ $(document).ready(function () {
         console.log('hamburger toggle')
     });
 
-    //Ink Animation
+    //Ink Animation - credit to https://codepen.io/hexapode/pen/EapgoZ
     var Engine = function (el, Experiment) {
         // container infos
         this.el = el[0];
