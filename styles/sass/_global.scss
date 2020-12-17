@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    color: $primaryFontColorDarkMode;
+}
+
 ul {
     list-style: none;
 }
@@ -52,28 +56,28 @@ body {
         }
 }
 
-.light-mode-test {
-    background-color: $primaryBackgroundColorLightMode;
-    color: $secondaryFontColorLightMode;
-        & a {
-            color: $accentColorOneLightMode;
-        }
-            & a:hover {
-                text-decoration: 3px underline $universalAccent;
-            }
-                .fa-bars {
-                    color: $accentColorOneLightMode;
-                }
-                .period {
-                    color: $accentColorOneLightMode;
-                }
-                    .submit:hover,
-                    .submit:focus {
-                        background-color: $accentColorOneLightMode;
-                        color: $primaryBackgroundColorLightMode;
-                    }
+// .light-mode-test {
+//     background-color: $primaryBackgroundColorLightMode;
+//     color: $secondaryFontColorLightMode;
+//         & a {
+//             color: $accentColorOneLightMode;
+//         }
+//             & a:hover {
+//                 text-decoration: 3px underline $universalAccent;
+//             }
+//                 .fa-bars {
+//                     color: $accentColorOneLightMode;
+//                 }
+//                 .period {
+//                     color: $accentColorOneLightMode;
+//                 }
+//                     .submit:hover,
+//                     .submit:focus {
+//                         background-color: $accentColorOneLightMode;
+//                         color: $primaryBackgroundColorLightMode;
+//                     }
 
-}
+// }
 
 //Period Style for Dark Mode
 .period {
