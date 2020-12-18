@@ -28,7 +28,12 @@
     color: $accentColorOneDarkMode;
 }
 
-
+.resume {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid $primaryFontColorDarkMode;
+    border-radius: 15px;
+}
 
 form input,
 form textarea {
@@ -40,6 +45,7 @@ form textarea {
 
 
 .submit {
+    background-color: $primaryFontColorDarkMode;
     margin-top: 10px;
     width: 125px;
     padding: 10px;

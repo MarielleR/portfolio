@@ -16,6 +16,7 @@
             border-radius: 30px;
             width: 75%;
             margin-left: 140px;
+            box-shadow: 2px 2px $accentColorOneDarkMode;
         }
             ul {
                 display: flex;
@@ -30,7 +31,7 @@ div.chevron-about {
     margin-bottom: 100px;
 }
 
-//Media queries 
+//Media Queries 
 @media (max-width: 1018px) {
     .about-details-container {
         flex-direction: column-reverse;

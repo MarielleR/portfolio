@@ -1,33 +1,10 @@
-//Accent/Hover Colors
-$universalAccent: grey;
-
-// Dark Mode Color Pallette
+// Color Pallette
 $primaryBackgroundColorDarkMode: black;
 $primaryFontColorDarkMode: #f8f9fa;
 $accentColorOneDarkMode: #dd0000;
-// $accentColorOneDarkMode: #dbcdf0;
-// $accentColorTwoDarkMode: #E0AAff;
+$universalAccent: grey;
 
-
-
-//Light Mode Color Pallette
-$primaryBackgroundColorLightMode: #f8f9fa;
-$secondaryFontColorLightMode: black;
-$accentColorOneLightMode: #4f0c7c;
-// // or #E0AAff (vibrant purple)
-// $accentColorTwoLightMode: #c6def1;
-
-//Fire variables
-$black:#111217;
-$brownl:#70392F;
-$brownd:#612E25;
-$yellow:#FFDC01;
-$orange:#FDAC01;
-$red:#F73B01;
-$animationtime:1.5s;
-
-
-//Fonts
+//Font
 $rale: 'Raleway', sans-serif;
 
 //Mixin for Font Specifications

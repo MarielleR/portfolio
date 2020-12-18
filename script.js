@@ -1,35 +1,34 @@
-
 $(document).ready(function () {
+    //Header Section - Event listener which displays hamburger menu
+    $("#bars").on("click", function () {
+        $("#hamb-ul-id").toggleClass("hidden");
+    });
+
+    //Project Section - Event Listeners which display the 'read more' text
     $("#read-one").on("click", function () {
         $("#project-one-text").toggleClass("hidden");
-        console.log('click on read one')
     });
 
     $("#read-two").on("click", function () {
         $("#project-two-text").toggleClass("hidden");
-        console.log('click on read two')
     });
 
     $("#read-three").on("click", function () {
         $("#project-three-text").toggleClass("hidden");
-        console.log('click on read three')
     });
 
-    $("#bars").on("click", function () {
-        $("#hamb-ul-id").toggleClass("hidden");
-        console.log('hamburger toggle')
-    });
 
     //Ink Animation - credit to https://codepen.io/hexapode/pen/EapgoZ
-    var Engine = function (el, Experiment) {
+        //Minor changes made to color pallette
+    const Engine = function (el, Experiment) {
         // container infos
         this.el = el[0];
 
         this.width = this.el.offsetWidth;
         this.height = this.el.offsetHeight;
 
-        var deltaTop = this.el.offsetTop;
-        var deltaLeft = this.el.offsetLeft;
+        const deltaTop = this.el.offsetTop;
+        const deltaLeft = this.el.offsetLeft;
 
         // an Array of inputs
         this.inputs = [];
@@ -111,11 +110,11 @@ $(document).ready(function () {
         /**
          * Inputs methods
          */
-        var lastCapture = 0;
+        const lastCapture = 0;
         function manageTouch(event) {
-            var inputs = [];
-            for (var i = 0; i < event.targetTouches.length; ++i) {
-                var type = event.type;
+            const inputs = [];
+            for (const i = 0; i < event.targetTouches.length; ++i) {
+                const type = event.type;
 
                 if (type === 'touchstart') {
                     type = 'start';
@@ -123,7 +122,7 @@ $(document).ready(function () {
                 } else if (type === 'touchmove') {
                     type = 'move';
 
-                    var now = new Date().getTime();
+                    const now = new Date().getTime();
 
                     if (lastCapture) {
                         this.captureTime = lastCapture - now;
@@ -149,8 +148,8 @@ $(document).ready(function () {
             this.inputs = inputs;
         }
 
-        var mouseIsDown = 0;
-        var mouseId = 0;
+        const mouseIsDown = 0;
+        const mouseId = 0;
 
 
         function mouseDown(event) {
@@ -175,7 +174,7 @@ $(document).ready(function () {
                 }];
             }
 
-            var now = new Date().getTime();
+            const now = new Date().getTime();
 
             if (lastCapture) {
                 this.captureTime = lastCapture - now;
@@ -228,17 +227,20 @@ $(document).ready(function () {
 
 
 
-    var ChineseInk = function (engine) {
+    const ChineseInk = function (engine) {
 
         this.engine = engine;
 
-        var BG_COLOR = 'black'
-        var COLORS = [
-            '#547980',
-            '#45ADA8',
-            '#FAE1B0 ',
-            '#AFBC9D',
-            '#F54A28'
+        const BG_COLOR = 'black'
+        const COLORS = [
+            '#ffc6ff',
+            '#bdb2ff',
+            '#a0c4ff',
+            '#9bf6ff',
+            '#caffbf',
+            '#fdffb6',
+            '#ffd6a5',
+            '#ffadad'
         ];
         // ideal to fine tune your brush!
         var PARAMETERS = {
@@ -460,13 +462,8 @@ $(document).ready(function () {
 
 
     };
-    // Main.js
 
-    var engine = new Engine($('#container'), ChineseInk);
+    const engine = new Engine($('#container'), ChineseInk);
     engine.start();
 
 });
-
-
-
-// AOS.init();

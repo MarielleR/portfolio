@@ -309,28 +309,19 @@ body a:hover {
 }
 
 .fa-bars:hover,
-.fa-bars:focus {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  color: #f8f9fa;
-}
-
-nav li:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
-.skills-grid li:hover,
-.skills-grid li:focus {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-}
-
+.fa-bars:focus,
 .about-social li:hover,
 .about-social-footer li:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
   color: #f8f9fa;
+}
+
+nav li:hover,
+.skills-grid li:hover,
+.skills-grid li:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .submit:hover,
@@ -378,12 +369,6 @@ button {
 
 .fa-chevron-down {
   font-size: 4.8rem;
-  font-weight: 700;
-}
-
-.fa-moon,
-.fa-lightbulb {
-  font-size: 2.3rem;
   font-weight: 700;
 }
 
@@ -597,6 +582,8 @@ header {
   border-radius: 30px;
   width: 75%;
   margin-left: 140px;
+  -webkit-box-shadow: 2px 2px #dd0000;
+          box-shadow: 2px 2px #dd0000;
 }
 
 .about-details-container ul {
@@ -817,6 +804,13 @@ div.chevron-about {
   color: #dd0000;
 }
 
+.resume {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #f8f9fa;
+  border-radius: 15px;
+}
+
 form input,
 form textarea {
   border: 2px solid grey;
@@ -826,6 +820,7 @@ form textarea {
 }
 
 .submit {
+  background-color: #f8f9fa;
   margin-top: 10px;
   width: 125px;
   padding: 10px;

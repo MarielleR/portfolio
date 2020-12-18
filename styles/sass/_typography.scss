@@ -33,11 +33,6 @@ button {
     @include fontSpecs (4.8rem, 700);
 }
 
-.fa-moon,
-.fa-lightbulb {
-    @include fontSpecs (2.3rem, 700);
-}
-
 .fa-bars {
     @include fontSpecs (3rem, 700);
 }
