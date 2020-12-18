@@ -662,6 +662,9 @@ div.chevron-about {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .skills-grid li {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 426px) {
@@ -707,6 +710,12 @@ div.chevron-about {
 .project-two-text,
 .project-three-text {
   margin: 0 30px 60px 30px;
+}
+
+.project-one-text .proj-span,
+.project-two-text .proj-span,
+.project-three-text .proj-span {
+  color: #dd0000;
 }
 
 .info-below {
@@ -806,6 +815,7 @@ div.chevron-about {
 
 .resume {
   margin-top: 12px;
+  margin-bottom: 30px;
   padding: 10px;
   border: 1px solid #f8f9fa;
   border-radius: 15px;
@@ -842,6 +852,9 @@ form textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact-container form {
+    margin-top: 40px;
   }
   .contact-container .form-text {
     width: 100%;

@@ -22,6 +22,9 @@
 @media (max-width: 627px) {
     .skills-grid {
         grid-template-columns: 1fr 1fr;
+        li {
+                font-size: 3.2rem;
+            }
     }
 }
 

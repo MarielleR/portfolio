@@ -30,6 +30,7 @@
 
 .resume {
     margin-top: 12px;
+    margin-bottom: 30px;
     padding: 10px;
     border: 1px solid $primaryFontColorDarkMode;
     border-radius: 15px;
@@ -61,14 +62,17 @@ form textarea {
 @media (max-width: 638px) {
     .contact-container {
         flex-direction: column;
-            .form-text {
-                width: 100%;
-                    p {
-                        font-size: 2rem;
-                    }
+            form {
+                margin-top: 40px;
             }
-                .form-box {
+                .form-text {
                     width: 100%;
+                        p {
+                            font-size: 2rem;
+                        }
                 }
+                    .form-box {
+                        width: 100%;
+                    }
     }
 }
